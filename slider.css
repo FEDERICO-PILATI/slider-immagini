@@ -1,0 +1,54 @@
+h1{
+    text-align: center;
+}
+
+#slider{
+    max-width: 1000px;
+    height: 450px;
+    margin: 50px auto;
+    /*overflow: auto; questo lo uso finchè non finisco lo slider, poi uso overflow:hidden per ragioni estetiche*/
+    overflow: hidden;
+    position: relative;
+}
+
+#slider .image{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+
+#slider .alberi{
+    background-image: url(immagini-slider/alberi-colorati.jpg);
+} 
+
+.costa{
+    background-image: url(immagini-slider/costa-montagna.jpg);
+} 
+
+.costiera{
+    background-image: url(immagini-slider/costiera-mare.jpg);
+} 
+
+.isole{
+    background-image: url(immagini-slider/isole.jpg);
+} 
+.lago{
+    background-image: url(immagini-slider/lago-montagna.jpg);
+} 
+.montagna{
+    background-image: url(immagini-slider/montagna-sfondo.jpg);
+}
+
+#slider .visibile{
+    left: 0;
+    transition: left 1s;
+}
+
+#slider .scansati{
+    left: -100%;
+    transition: left 1s;
+}
